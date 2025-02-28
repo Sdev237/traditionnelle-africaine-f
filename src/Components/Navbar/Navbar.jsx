@@ -8,7 +8,7 @@ import { FaBars, FaUserCircle } from 'react-icons/fa';
 
 function Navbar() {
   const [menu, setMenu] = useState("shop");
-  const [isOpen, setIsOpen] = useState(false); // État pour gérer l'ouverture du menu
+  const [isOpen, setIsOpen] = useState(false);
   const { getTotalItems } = useContext(ShopContext);
   const totalItems = getTotalItems();
   const menuRef = useRef();
@@ -36,7 +36,7 @@ function Navbar() {
           {window.innerWidth <= 197 ? (
             <FaUserCircle className='login-logo' />
           ) : (
-            <button>Login</button>
+            <button>Login </button>
           )}
         
         </Link>
